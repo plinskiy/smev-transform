@@ -38,6 +38,7 @@ class Transform
             
             $xmlWriter = new XMLWriter();
             $xmlWriter->openMemory();
+            $xmlWriter->startDocument('1.0','UTF-8');
             
             while ($xmlReader->read()) {
                 if ($xmlReader->nodeType == XMLReader::TEXT) {
